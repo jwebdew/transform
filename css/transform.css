@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+* {margin:0; padding:0;}
+ul li, ol li {list-style: none;}
+a {text-decoration:none; color: #333;}
+
+.main_visual {
+    height: 500px;
+    background: url('../img/bg_img.jpg') center / cover no-repeat;
+    position: relative;
+}
+.box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* transform: translateY(-50%); */
+    /* transform: translate(위치이동x, 위치이동y) */
+    text-align: center;
+    width: 100%;
+}
+.box p:first-child {
+    font-size: 40px;
+    margin-bottom:  10px;
+}
+.box p:nth-child(2) {
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+.box div {
+    width: 0; 
+    transition: 1s; 
+    margin: 0 auto; 
+    position: relative; 
+    left: -75px;
+}
+.box a {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /* background-color: hotpink; */
+    border-radius: 5px;
+    margin: 0 auto;
+    border: 1px solid hotpink;
+    display: block;
+     
+}
+.box div:hover {
+    width: 150px;
+    background-color: hotpink;
+    left: 0;
+}
+.box div a {color: #fff;}
+ 
